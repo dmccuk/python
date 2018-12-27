@@ -5,12 +5,13 @@ score = {"a": 1, "c": 3, "b": 3, "e": 1, "d": 2, "g": 2,
          "x": 8, "z": 10}
          
 def scrabble_score(word):
-  word = word.lower()
-  total = 0
-  for letter in word:
-    for leter in score:
-      if letter == leter:
-        total = total + score[leter]
-  return total
+    word = word.lower()
+    total = 0
+    for letter in word:
+        for leter in score:
+            if letter == leter:
+                total = total + score[leter]
+    
+    return total
 
 print scrabble_score("pizza")
